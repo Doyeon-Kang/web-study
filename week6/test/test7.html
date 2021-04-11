@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>window 객체 예제</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      setTimeout(function () {
+        alert("이벤트 발생!");
+      }, 2000);
+      setInterval(() => {
+        document.write("발생!!");
+      }, 3000);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

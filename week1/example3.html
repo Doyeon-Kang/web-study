@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제3</title>
+</head>
+<body>
+    <h2>do-while 문으로 0에서 n까지 합</h2>
+    <hr>
+    <script>
+        let max = prompt('0보다 큰 정수를 입력하세요');
+        let sum = 0;
+        let num = 0;
+        if(max <= 0) {
+            document.write('0보다 큰 정수를 입력하세요');
+        } else {
+            do {
+                sum += num;
+                num += 1;
+            } while(num <= max)
+            document.write(`0에서 ${max}까지 합은 ${sum}`);
+        }
+    </script>
+</body>
+</html>

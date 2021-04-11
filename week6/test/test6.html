@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js 예제</title>
+  <script src="./test.js"></script>
+  <style>
+    fieldset {
+      width: 20%;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: center;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset>
+    <legend>추가할 단어를 입력하세요</legend><br>
+    한글: <input type="text" id="han" placeholder="한글을 입력하세요.">
+    영어: <input type="text" id="eng" placeholder="영어를 입력하세요.">
+    <input type="button" onclick="create()" value="입력">
+  </fieldset>
+  <table border="1">
+    <caption>Dictionary</caption>
+    <tbody id="dict">
+      <tr>
+        <th>한글</th>
+        <th>영어</th>
+      </tr>
+      <tr>
+        <td>사과</td>
+        <td>apple</td>
+      </tr>
+      <tr>
+        <td>바나나</td>
+        <td>banana</td>
+      </tr>
+      <tr>
+        <td>수박</td>
+        <td>watermelon</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

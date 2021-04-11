@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 상속
+    // class -> 붕어빨 틀
+    // 객체, 인스턴스 -> 붕어빵
+    // 상속 -> 붕어빵 맛 ex). 팥, 슈크림, 초코...
+
+    class User {
+      constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+      }
+
+      info() {
+        return `이름: ${this.name} / 나이: ${this.age} / 성별: ${this.gender}`;
+      }
+
+      infoPrint() {
+        return '일반 학생입니다.'
+      }
+    }
+
+    class UserClub extends User{
+      constructor(name, age, gender, department) {
+        super(name, age, gender);
+        this.department = department;
+      }
+
+      // Overriding -> 덮어쓰기
+      infoPrint() {
+        return '동아리 학생입니다.'
+      }
+    }
+
+    const user1 = new User('김영희', 15, '여성');
+    const user2 = new UserClub('김철수', 18, '남성');
+    
+    console.log(user1.info());
+    console.log(user1.infoPrint());
+
+    console.log(user2.info());
+    console.log(user2.infoPrint());
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습3</title>
+  <style>
+    table {
+      width: 100%;
+    }
+    caption {
+      color: red;
+    }
+    th {
+      color: white;
+      text-align: center;
+      margin: none;
+      padding: 2px;
+    }
+    td {
+      text-align: center;
+    }
+    input {
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    button {
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .buttons {
+      margin-top: 15px;
+    }
+    .top {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <caption><strong>교재주문</strong></caption>
+    <tr class="top">
+      <th>전공서적</th>
+      <th>가격</th>
+      <th>수량</th>
+      <th>합계</th>
+    </tr>
+    <tr>
+      <td>자바프로그래밍</td>
+      <td style="text-align: end;">34,000원</td>
+      <td><input type="number" placeholder="0"></td>
+      <td><input type="number" placeholder="0" style="width:50px;"></td>
+    </tr>
+    <tr>
+      <td>파이썬</td>
+      <td style="text-align: end;">9,500원</td>
+      <td><input type="number" placeholder="0"></td>
+      <td><input type="number" placeholder="0" style="width:50px;"></td>
+    </tr>
+    <tr>
+      <td>이산수학</td>
+      <td style="text-align: end;">12,000원</td>
+      <td><input type="number" placeholder="0"></td>
+      <td><input type="number" placeholder="0" style="width:50px;"></td>
+    </tr>
+    <tr>
+      <td>웹프로그래밍</td>
+      <td style="text-align: end;">50,000원</td>
+      <td><input type="number" placeholder="0"></td>
+      <td><input type="number" placeholder="0" style="width:50px;"></td>
+    </tr>
+  </table>
+  <div class="buttons">
+    <button>계산</button>
+    <button>구매</button>
+    <button>초기화</button>
+  </div>
+  <p><a href="#">메인페이지로 이동</a></p>
+</body>
+</html>

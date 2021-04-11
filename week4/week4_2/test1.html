@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습1</title>
+  <style>
+    td {
+      border: 1px dashed red;
+      margin: 20px;
+      text-align: center;
+    }
+    .round {
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+    .small_round {
+      border-radius: 10px;
+      padding: 30px;
+    }
+    .hidden {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="round">1번 블록입니다.</td>
+      <td class="hidden"></td>
+      <td class="hidden"></td>
+      <td rowspan="7" class="small_round">2번 블록입니다.</td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+      <td class="small_round">3번 블록입니다.</td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+      <td class="round">4번 블록입니다.</td>
+    </tr>
+  </table>
+</body>
+</html>
