@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문제3</title>
+  <script>
+    function adder(n) {
+      var sum = 0;
+      for (var i = 1; i <= 9; i++) {
+        sum += n * i;
+      }
+      return sum;
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    var gugudan = prompt("출력할 구구단을 입력하세요.");
+    var size = 10;
+
+    for (var i = 1; i <= 9; i++) {
+      document.write("<span ");
+      document.write("style='font-size:" + (size + 5 * i) + "px'>");
+      document.write(gugudan + " * " + i + " = " + (gugudan * i));
+      document.write("</span>")
+      document.write("<br>");
+      if (i == 9) {
+        document.write("<hr>");
+        document.write("<span ");
+        document.write("style='font-size:" + (size + 5 * i) + "px'>");
+        document.write("각 구간별 결과값의 총합 : " + adder(gugudan));
+        document.write("</span>")
+
+      }
+    }
+  </script>
+</body>
+
+</html>
